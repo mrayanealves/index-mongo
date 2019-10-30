@@ -154,6 +154,7 @@ if __name__ == "__main__":
     plt.suptitle('Time spent inserting before and after index creation (in seconds).')
     plt.bar(keys_insert, times_insert)
     plt.savefig('images/time_insert.jpg')
+    plt.close()
 
     times_find = []
     times_find.append(time_find_before_index[0][0])
@@ -165,3 +166,4 @@ if __name__ == "__main__":
     plt.suptitle('Time spent finding values for var1 between 1 and 10 before and \n after index creation (in seconds).')
     plt.bar(keys_find, times_find)
     plt.savefig('images/time_find.jpg')
+    plt.close()
