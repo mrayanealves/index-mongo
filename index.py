@@ -42,7 +42,7 @@ def run():
         file.write(str(duration.total_seconds()) + "\n")
         file.close
 
-    # Item 2: Find for values to var1 between 1 and 10 
+    # Item 2: Find for values to var1 between 0 and 10 
     #         and calculate the time spend in this operation.
 
     # Clearing file to save time spent in find
@@ -73,7 +73,7 @@ def run():
 
     start = datetime.datetime.today()
 
-    # Finding values for var1 between 1 and 10 in collection
+    # Finding values for var1 between 0 and 10 in collection
     values = collection.find({'var1': {'$gt': 0, '$lt': 10}})
 
     end = datetime.datetime.today()
@@ -94,7 +94,7 @@ def run():
 
     start = datetime.datetime.today()
 
-    # Finding values for var1 between 1 and 10 in collection
+    # Finding values for var1 between 0 and 10 in collection
     values = collection.find({'var1': {'$gt': 0, '$lt': 10}}, {'var1': 1, '_id': 0})
 
     end = datetime.datetime.today()
